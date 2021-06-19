@@ -1,0 +1,155 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	width: 960px;
+	background-color: #efefef;
+	margin: auto;
+}
+
+h1.page-title {
+	text-align: center;
+	color: #333333;
+	font-size: 1.25rem;
+	margin-bottom: 0.5rem;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+aside {
+	display: flex;
+	order: 1;
+}
+
+.grid-container {
+	display: grid;
+	list-style: none;
+	grid-template-columns: auto auto auto;
+	margin: auto;
+}
+
+.grid-item {
+	background-color: rgba(255, 255, 255, 0.8);
+	color: #ffffff;
+	font-weight: bold;
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	padding: 2.5rem 3.5rem;
+	font-size: 2rem;
+	text-align: center;
+	border: none;
+}
+
+.item-3,
+.item-5,
+.item-9 {
+	background-color: #2f454e;
+}
+
+.item-2,
+.item-4 {
+	background-color: #2b8ead;
+}
+
+.item-1,
+.item-8 {
+	background-color: #6f98a8;
+}
+
+.item-6,
+.item-7 {
+	background-color: #bfbfbf;
+}
+
+.btn {
+	display: block;
+	background-color: #72c3dc;
+	color: #ffffff;
+	margin: 1rem;
+	width: 100%;
+	padding: 0.75rem 1.25rem;
+	text-transform: uppercase;
+	border-radius: 0.5rem;
+	border: none;
+	box-shadow: 0px 5px 0px #2b8ead;
+	font-size: 10px;
+	font-weight: 200;
+}
+
+footer {
+	padding: 2rem;
+	text-align: center;
+}
+
+@media screen and (max-device-width: 480px) {
+	main {
+		margin: 0;
+		width: 100%;
+		background-color: #ffffff;
+	}
+	h1.page-title {
+		font-size: 2rem;
+		padding: 1rem;
+		background-color: #2f454e;
+		color: #ffffff;
+		font-weight: 400;
+	}
+	.wrapper {
+		display: block;
+	}
+	aside {
+		display: block;
+		margin: 0.5rem 0;
+	}
+	.btn-container {
+		display: flex;
+		justify-content: center;
+	}
+	.btn {
+		padding: 1.25rem;
+		width: 30%;
+		font-size: 1rem;
+		border-radius: 0.75rem;
+	}
+	#shuffle-btn {
+		margin-right: 0;
+	}
+	#sort-btn {
+		margin-left: 0.75rem;
+	}
+	.grid-container {
+		display: block;
+		padding: 0 1rem;
+	}
+	.grid-item {
+		background-color: #efefef;
+		color: #000000;
+		margin-bottom: 0.5rem;
+		font-size: 1.5rem;
+		padding: 0.75rem;
+	}
+	.item-3,
+	.item-5,
+	.item-9 {
+		border-left: 0.75rem solid #2f454e;
+	}
+	.item-2,
+	.item-4 {
+		border-left: 0.75rem solid #2b8ead;
+	}
+	.item-1,
+	.item-8 {
+		border-left: 0.75rem solid #6f98a8;
+	}
+	.item-6,
+	.item-7 {
+		border-left: 0.75rem solid #bfbfbf;
+	}
+	footer p em {
+		font-size: 1.25rem;
+	}
+}
